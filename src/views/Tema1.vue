@@ -132,8 +132,525 @@
             p.mb-5 Se guarda el <i>data frame</i> con el 10 % del total en la variable <i>pob_10</i>
             p.mb-5 Si se requiere un 20 % se escribiría <i>pob_20 = df.sample(frac =.2)</i>
             p.mb-5 Se guarda el <i>data frame</i> con el 20 % del total en la variable <i>pob_20</i>
+
+    p.mb-5 Muestra los valores de la columna condición de forma porcentual
+
+
+    ImagenInfografica.color-acento-botones.mb-5
+      template(v-slot:imagen)
+        figure
+          .titulo-sexto.color-acento-contenido
+            p.mb-0 
+              p <b> Figura 1. </b> <i>Columna condición de forma porcentual</i>
+          img(src='@/assets/curso/temas/T1/img-8.png', alt='Texto que describa la imagen')
+
+      .tarjeta.color-acento-botones.p-3(x="63%" y="47%" numero="1")
+        p Muestra los comandos para escribir los valores de la columna condición en forma porcentual de mayor a menor.
+
+      .tarjeta.color-acento-botones.p-3(x="40%" y="58%" numero="2")
+        p Muestra los valores de la columna condición de forma porcentual de mayor a menor.
         
   
+    .col-md-10.mx-auto
+      .tarjeta.fab.p-3.mb-5
+        .row.justify-content-around.align-items-center
+          .col-3.col-sm-2.col-lg-1
+            img(src="@/assets/curso/temas/T1/img-9.svg")
+          .col
+            .row.justify-content-between.align-items-center
+              .col.mb-3.mb-sm-0
+                p.text-small.mb-2 Para familiarizarse con los mapas por medio de latitud y longitud, Observa los siguientes mapas de Colombia y Medellín, con los 100 puntos de los incidentes de tránsito ocurridos en esta ciudad.
+                p.text-small También observa los gráficos dinámicos generados con la <i>libreria plotly.</i>
+              .col-sm-auto
+                a.boton.color-acento-botones(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank")
+                  span(style='color:#12263f !important') Descargar
+                  i.fas.fa-file-download(style='color:#12263f !important')
+    Separador
+    
+    #t_1_2.titulo-segundo.color-acento-contenido
+      h2 1.2 Herramientas para análisis y procesamiento de datos
+
+
+    .row.justify-content-around.align-items-center.mb-5
+      .col-4.col-lg-3
+        img(src="@/assets/curso/temas/T1/img-10.svg")
+      .col-8
+        p La finalidad de este componente es profundizar en el manejo de herramientas para el análisis y procesamiento de los datos a fin de mejorar la técnica conocida como <i>Exploratory Data Analysis</i> (EDA) o Análisis Exploratorio de Datos. Utilizando diferentes herramientas de procesamiento, análisis de datos y visualización.
+        p Entre las herramientas están <i>Google Colab, Power BI, Tableau, CartoDb.</i>
+
+    
+    TabsB.color-acento-botones.mb-5
+      .py-4.py-md-5(titulo="Google Colab" :icono="require('@/assets/curso/temas/T1/img-11.svg')")
+        .row.justify-content-around.align-items-center
+          .col-md-4.mb-4.mb-md-0
+            figure
+              img(src='@/assets/curso/temas/T1/img-12.png', alt='Texto que describa la imagen')
+          .col-md-6
+            h4 <i>Google Colab</i>
+            p Se puede trabajar código de <i>Python</i> por celdas, importar librerías para visualización de datos como <i>matplolit, plotly, seaborn,</i> etc.
+
+      .py-4.py-md-5(titulo="Power BI – Tableau Public" :icono="require('@/assets/curso/temas/T1/img-11.svg')")
+        .row.justify-content-around.align-items-center
+          .col-md-4.mb-4.mb-md-0
+            figure
+              img(src='@/assets/curso/temas/T1/img-13.png', alt='Texto que describa la imagen')
+          .col-md-6
+            h4 <i>Power BI – Tableau Public</i>
+            p.mb-3 Herramientas para visualización de datos <i>Power BI</i> y <i>Tableau Public</i> en las cuales se pueden hacer tableros de mando o <i>dashboard</i> y contar o narrar una historia sobre los datos o <i>storytelling</i>.
+            p.mb-5 Este tipo de herramientas permite conectarse con diferentes tipos de datos y con datos en diferentes bases de datos tanto <i>on premise</i> o en la nube, también se puede publicar los <i>dasboard</i> y <i>storytelling</i> en la nube. 
+        
+      .py-4.py-md-5(titulo="CartoDB" :icono="require('@/assets/curso/temas/T1/img-11.svg')")
+        .row.justify-content-around.align-items-center
+          .col-md-4.mb-4.mb-md-0
+            figure
+              img(src='@/assets/curso/temas/T1/img-14.png', alt='Texto que describa la imagen')
+          .col-md-6
+            h4 <i>CartoDB</i>
+            p Plataforma para almacenar y visualizar datos espaciales o geográficos; se debe tener latitud y longitud de los puntos para proceder a ubicarlos en el mapa.
+
+    
+    .row.justify-content-around.align-items-center.mb-5
+      .col-md-8
+        p.mb-4 A continuación, se explica un ejemplo paso a paso en la herramienta <i>Power BI</i>. Se trabajará con los datos de incidentes viales tomados de la página de datos abiertos de la Alcaldía de Medellín (MetaData,2022).
+        p.mb-5 <i>Power BI</i> permite obtener datos de diferentes fuentes de datos, analizarlos y presentar un análisis de estos a través de informes. A continuación, se explica secuencialmente su funcionamiento mediante ejemplos.
+      .col-md-4.mb-4.mb-md-0
+        figure
+          img(src='@/assets/curso/temas/T1/img-15.png', alt='Texto que describa la imagen')
+
+
+    .tarjeta.color-pasos.p-4.mb-5
+      PasosB.color-acento-botones
+
+        .row.justify-content-around.align-items-center(titulo="")
+          .col-md-6.mb-4.mb-md-0
+            p En <i>Power BI</i> en el menú de inicio dar click en el botón obtener datos, luego conjunto de datos de <i>Power BI</i>, después elige texto o <i>CSV</i>.
+        
+          .col-md-6
+            figure
+              .titulo-sexto.color-acento-contenido
+                p.mb-0 
+                  p <b> Figura 2. </b> <i>Cargar datos en formato CSV</i>
+              img(src='@/assets/curso/temas/T1/img-16.png', alt='Texto que describa la imagen')
+              figcaption Nota. Muestra como cargar los datos en formato CSV dentro de Power BI. 
+
+        .row.justify-content-around.align-items-center(titulo="")
+          .col-md-6.mb-4.mb-md-0
+            p Se pueden transformar los tipos de datos por columna, convertir a texto, a número, fecha, etc.
+        
+          .col-md-6
+            figure
+              .titulo-sexto.color-acento-contenido
+                p.mb-0 
+                  p <b> Figura 3. </b> <i>Transformar tipos de datos</i>
+              img(src='@/assets/curso/temas/T1/img-17.png', alt='Texto que describa la imagen')
+              figcaption Nota. Muestra la forma de transformar los tipos de datos por columna.  
+
+        .row.justify-content-around.align-items-center(titulo="")
+          .col-md-6.mb-4.mb-md-0
+            p Las columnas latitud y longitud que están en formato texto o <i>string</i> se pueden cambiar a número.
+        
+          .col-md-6
+            figure
+              .titulo-sexto.color-acento-contenido
+                p.mb-0 
+                  p <b> Figura 4. </b> <i>Columna latitud y longitud en formato texto</i>
+              img(src='@/assets/curso/temas/T1/img-18.png', alt='Texto que describa la imagen')
+              figcaption Nota. Muestra las columnas latitud y longitud en formato texto o <i>string</i> que se pueden cambiar a número. 
+
+
+        .row.justify-content-around.align-items-center(titulo="")
+          .col-md-6.mb-4.mb-md-0
+            p Muestra las columnas latitud y longitud en formato texto o <i>string</i>, se pueden cambiar a número donde está el símbolo número decimal.
+        
+          .col-md-6
+            figure
+              .titulo-sexto.color-acento-contenido
+                p.mb-0 
+                  p <b> Figura 5. </b> <i>Columnas latitud y longitud</i>
+              img(src='@/assets/curso/temas/T1/img-19.png', alt='Texto que describa la imagen')
+
+        .row.justify-content-around.align-items-center(titulo="")
+          .col-md-6.mb-4.mb-md-0
+            p Muestra Las columnas latitud y longitud cambiadas a formato número.
+        
+          .col-md-6
+            figure
+              .titulo-sexto.color-acento-contenido
+                p.mb-0 
+                  p <b> Figura 6. </b> <i>Columnas latitud y longitud en formato número</i>
+              img(src='@/assets/curso/temas/T1/img-20.png', alt='Texto que describa la imagen')
+
+        .row.justify-content-around.align-items-center(titulo="")
+          .col-md-6.mb-4.mb-md-0
+            p Los errores en las columnas se pueden eliminar dando click derecho en “Quitar errores”.
+        
+          .col-md-6
+            figure
+              .titulo-sexto.color-acento-contenido
+                p.mb-0 
+                  p <b> Figura 7. </b> <i>Quitar errores en las columnas</i>
+              img(src='@/assets/curso/temas/T1/img-21.png', alt='Texto que describa la imagen')
+              figcaption Nota. Muestra cómo quitar los errores en las columnas de <i>Power BI</i>. 
+
+
+        .row.justify-content-around.align-items-center(titulo="")
+          .col-md-6.mb-4.mb-md-0
+            p Se puede observar la columna latitud sin errores.
+        
+          .col-md-6
+            figure
+              .titulo-sexto.color-acento-contenido
+                p.mb-0 
+                  p <b> Figura 8. </b> <i>Columna latitud sin errores</i>
+              img(src='@/assets/curso/temas/T1/img-22.png', alt='Texto que describa la imagen')
+
+        .row.justify-content-around.align-items-center(titulo="")
+          .col-md-6.mb-4.mb-md-0
+            p Se pueden reemplazar valores en una columna.
+        
+          .col-md-6
+            figure
+              .titulo-sexto.color-acento-contenido
+                p.mb-0 
+                  p <b> Figura 9. </b> <i>Reemplazar valores en una columna</i>
+              img(src='@/assets/curso/temas/T1/img-23.png', alt='Texto que describa la imagen')
+              figcaption Nota. Muestra cómo reemplazar valores en una columna.  
+
+        .row.justify-content-around.align-items-center(titulo="")
+          .col-md-6.mb-4.mb-md-0
+            p Las columnas se pueden filtrar de forma ascendente, descendente, por valores, etc.
+        
+          .col-md-6
+            figure
+              .titulo-sexto.color-acento-contenido
+                p.mb-0 
+                  p <b> Figura 10. </b> <i>Filtrar las columnas</i>
+              img(src='@/assets/curso/temas/T1/img-24.png', alt='Texto que describa la imagen')
+              figcaption Nota. Muestra cómo filtrar las columnas. 
+
+        .row.justify-content-around.align-items-center(titulo="")
+          .col-md-6.mb-4.mb-md-0
+            p En <i>Power BI</i> se puede observar el modelo.
+        
+          .col-md-6
+            figure
+              .titulo-sexto.color-acento-contenido
+                p.mb-0 
+                  p <b> Figura 11. </b> <i>Modelo en Power BI</i>
+              img(src='@/assets/curso/temas/T1/img-25.png', alt='Texto que describa la imagen')
+
+        .row.justify-content-around.align-items-center(titulo="")
+          .col-md-6.mb-4.mb-md-0
+            p En <i>Power BI</i> se pueden crear un <i>dashboard</i> o tablero de mando luego de hacer la limpieza de los datos que consiste en borrar los datos duplicados, los valores <i>nan</i>, los valores nulos, el tipo de variable correcto para cada columna, etc.
+        
+          .col-md-6
+            figure
+              .titulo-sexto.color-acento-contenido
+                p.mb-0 
+                  p <b> Figura 12. </b> <i>Inicio del dashboard</i>
+              img(src='@/assets/curso/temas/T1/img-26.png', alt='Texto que describa la imagen')
+              figcaption Nota. Muestra el inicio del <i>dashboard</i> o tablero de mando
+
+        .row.justify-content-around.align-items-center(titulo="")
+          .col-md-6.mb-4.mb-md-0
+            p En la configuración interna del computador se puede cambiar a región español (Latinoamérica) para que <i>Power BI</i> reconozca el decimal como un punto y la coma para separación de mil.
+        
+          .col-md-6
+            figure
+              .titulo-sexto.color-acento-contenido
+                p.mb-0 
+                  p <b> Figura 13. </b> <i>Cambiar idioma de la región</i>
+              img(src='@/assets/curso/temas/T1/img-27.png', alt='Texto que describa la imagen')
+              figcaption Nota. Cambiar región a español (Latinoamérica). 
+
+        .row.justify-content-around.align-items-center(titulo="")
+          .col-md-6.mb-4.mb-md-0
+            p Muestra la siguiente pestaña para cambiar a región español (Latinoamérica).
+        
+          .col-md-6
+            figure
+              .titulo-sexto.color-acento-contenido
+                p.mb-0 
+                  p <b> Figura 14. </b> <i>Pestaña cambiar región</i>
+              img(src='@/assets/curso/temas/T1/img-28.png', alt='Texto que describa la imagen')
+
+
+        .row.justify-content-around.align-items-center(titulo="")
+          .col-md-6.mb-4.mb-md-0
+            p Muestra la última pestaña para cambiar a región español (Latinoamérica)
+        
+          .col-md-3
+            figure
+              .titulo-sexto.color-acento-contenido
+                p.mb-0 
+                  p <b> Figura 15. </b> <i>Personalizar el formato</i>
+              img(src='@/assets/curso/temas/T1/img-29.png', alt='Texto que describa la imagen')
+
+        .row.justify-content-around.align-items-center(titulo="")
+          .col-md-6.mb-4.mb-md-0
+            p Si el mapa está deshabilitado debe ir a archivo-> opciones y configuración-> opciones ->global ->seguridad, por último, marcar uso de elementos visuales de mapa y mapa coroplético.
+        
+          .col-md-6
+            figure
+              .titulo-sexto.color-acento-contenido
+                p.mb-0 
+                  p <b> Figura 16. </b> <i>Habilitar opciones de configuración del mapa</i>
+              img(src='@/assets/curso/temas/T1/img-30.png', alt='Texto que describa la imagen')
+              figcaption Nota. Muestra como habilitar el mapa. 
+
+        .row.justify-content-around.align-items-center(titulo="")
+          .col-md-6.mb-4.mb-md-0
+            p Muestra como habilitar el mapa.
+        
+          .col-md-6
+            figure
+              .titulo-sexto.color-acento-contenido
+                p.mb-0 
+                  p <b> Figura 17. </b> <i>Habilitar el mapa</i>
+              img(src='@/assets/curso/temas/T1/img-31.png', alt='Texto que describa la imagen')
+
+        .row.justify-content-around.align-items-center(titulo="")
+          .col-md-6.mb-4.mb-md-0
+            p Para el <i>dashboard</i> se escoge de la visualización la figura tabla y, luego, las columnas, en este caso año, mes, día, clase_incidente, barrio, comuna, grupo_edad, condición. 
+        
+          .col-md-6
+            figure
+              .titulo-sexto.color-acento-contenido
+                p.mb-0 
+                  p <b> Figura 18. </b> <i>Escoger visualización</i>
+              img(src='@/assets/curso/temas/T1/img-32.png', alt='Texto que describa la imagen')
+              figcaption Nota. Muestra cómo escoger de  la visualización la figura tabla con sus columnas. 
+
+        .row.justify-content-around.align-items-center(titulo="")
+          .col-md-6.mb-4.mb-md-0
+            p En el <i>dashboard</i> se escoge el gráfico de anillos donde está el recuento por comuna referente a la clase de incidente (choque, otro, atropello, caída del ocupante, volcamiento).
+        
+          .col-md-6
+            figure
+              .titulo-sexto.color-acento-contenido
+                p.mb-0 
+                  p <b> Figura 19. </b> <i>Mostrar un gráfico de anillos</i>
+              img(src='@/assets/curso/temas/T1/img-33.png', alt='Texto que describa la imagen')
+
+        .row.justify-content-around.align-items-center(titulo="")
+          .col-md-6.mb-4.mb-md-0
+            p Filtrado por las columnas, en este caso: año, mes, día, clase_ incidente, barrio, comuna, grupo_ edad, condición.
+        
+          .col-md-6
+            figure
+              .titulo-sexto.color-acento-contenido
+                p.mb-0 
+                  p <b> Figura 20. </b> <i>Filtrado por columnas</i>
+              img(src='@/assets/curso/temas/T1/img-34.png', alt='Texto que describa la imagen')
+
+
+        .row.justify-content-around.align-items-center(titulo="")
+          .col-md-6.mb-4.mb-md-0
+            p En el <i>dasboard</i> final se muestran dos tarjetas donde está la hora del incidente y la condición. 
+        
+          .col-md-6
+            figure
+              .titulo-sexto.color-acento-contenido
+                p.mb-0 
+                  p <b> Figura 21. </b> <i>Dashboard final</i>
+              img(src='@/assets/curso/temas/T1/img-35.png', alt='Texto que describa la imagen')
+              figcaption Nota. Muestra el <i>dasboard</i> final donde se aprecian dos tarjetas: la hora del incidente y la condición. 
+
+
+    .row.justify-content-around.align-items-center.mb-5
+      .col-md-2.mb-4.mb-md-0
+        figure
+          img(src='@/assets/curso/temas/T1/img-36.svg', alt='Texto que describa la imagen')
+      .col-md-9
+        p En el ejemplo anterior se presentó el funcionamiento de <i>Power BI</i> y la creación de tableros dinámicos en un proceso de análisis de datos reales sobre incidentes de tránsito en la ciudad de Medellín. A continuación, se ilustra un breve ejemplo del uso de la herramienta <i>Tableau Public</i>.
+        
+    .tarjeta.tarjeta-slyder.p-4.mb-5
+      SlyderA(tipo="b")
+        .row.justify-content-around.align-items-center
+          .col-md-6.mb-4.mb-md-0
+            h4.mb-3 <i>Tableau Public</i>
+            p Otra herramienta para la visualización y el análisis de datos. En conectar se escoge el tipo de fuente de los datos, en este caso: archivo de texto.
+        
+          .col-md-6
+            figure
+              .titulo-sexto.color-acento-contenido
+                p.mb-0 
+                  p <b> Figura 22. </b> <i>Escoger la fuente de datos</i>
+              img(src='@/assets/curso/temas/T1/img-37.png', alt='Texto que describa la imagen')
+              figcaption Nota. Muestra como escoger la fuente de datos para el análisis. 
+
+        .row.justify-content-around.align-items-center
+          .col-md-6.mb-4.mb-md-0
+            p En el archivo de texto se seleccionan los datos de incidentes de tránsito en Medellín.
+        
+          .col-md-6
+            figure
+              .titulo-sexto.color-acento-contenido
+                p.mb-0 
+                  p <b> Figura 23. </b> <i>Elegir archivo de datos</i>
+              img(src='@/assets/curso/temas/T1/img-38.png', alt='Texto que describa la imagen')
+              figcaption Nota. Muestra la forma de elegir el archivo de los datos de incidentes de tránsito en Medellín. 
+
+        .row.justify-content-around.align-items-center
+          .col-md-6.mb-4.mb-md-0
+            p Se puede observar una vista previa de los datos en <i>Tableau</i>.
+        
+          .col-md-6
+            figure
+              .titulo-sexto.color-acento-contenido
+                p.mb-0 
+                  p <b> Figura 24. </b> <i>Vista previa</i>
+              img(src='@/assets/curso/temas/T1/img-39.png', alt='Texto que describa la imagen')
+              figcaption Nota. Muestra la vista previa de los datos en <i>Tableau</i>. 
+
+        .row.justify-content-around.align-items-center
+          .col-md-6.mb-4.mb-md-0
+            p Al hacer click en la hoja 1, en esa región, se pueden hacer las diferentes visualizaciones o gráficos.
+        
+          .col-md-6
+            figure
+              img(src='@/assets/curso/temas/T1/img-40.png', alt='Texto que describa la imagen')
+              figcaption Nota. Muestra la hoja 1 donde se puede hacer las diferentes visualizaciones o gráficos. 
+
+
+
+        .row.justify-content-around.align-items-center
+          .col-md-6.mb-4.mb-md-0
+            p.mb-3 En las columnas están escritos diferentes símbolos. ABC significa que la columna es de tipo texto o <i>string</i>, símbolo de calendario referente a una fecha, símbolo de numeral referente a un valor numérico.
+            p.mb-5 Para latitud y longitud se cambia de número a función geográfica latitud y longitud, función geográfica longitud. Queda con un símbolo de globo terráqueo o mundo.
+        
+          .col-md-6
+            figure
+              .titulo-sexto.color-acento-contenido
+                p.mb-0 
+                  p <b> Figura 25. </b> <i>Símbolos de las columnas</i>
+              img(src='@/assets/curso/temas/T1/img-41.png', alt='Texto que describa la imagen')
+              figcaption Nota. Muestra los diferentes símbolos de las columnas, también de la latitud y longitud del número a función geográfica. 
+
+        .row.justify-content-around.align-items-center
+          .col-md-6.mb-4.mb-md-0
+            p Ahora, hacer click en actualizar para ver los datos en las diferentes columnas.
+        
+          .col-md-6
+            figure
+              .titulo-sexto.color-acento-contenido
+                p.mb-0 
+                  p <b> Figura 26. </b> <i>Datos de las columnas</i>
+              img(src='@/assets/curso/temas/T1/img-42.png', alt='Texto que describa la imagen')
+
+        .row.justify-content-around.align-items-center
+          .col-md-6.mb-4.mb-md-0
+            p En la columna se arrastra la variable año, en la fila se arrastra la variable grupo_edad y en texto se arrastra la variable edad, quedando etiquetada por edad.
+        
+          .col-md-6
+            figure
+              .titulo-sexto.color-acento-contenido
+                p.mb-0 
+                  p <b> Figura 27. </b> <i>Columna año</i>
+              img(src='@/assets/curso/temas/T1/img-43.png', alt='Texto que describa la imagen')
+              figcaption Nota. Muestra en la columna año, en la fila grupo_edad y en texto la etiquetada por edad. 
+
+    Separador
+
+    #t_1_3.titulo-segundo.color-acento-contenido
+      h2 1.3 Criterios de respaldo y recuperación de información
+
+    p.mb-3 La información que genera una empresa u organización debe almenarse en una base de datos <i>on premise</i> o en la nube y tener como respaldo una copia de seguridad llamada <i>backups</i>. Las copias de seguridad deben realizarse periódicamente, dependiendo de la rapidez en la generación de datos y de la actividad de la empresa.
+    p.mb-5 Los <i>backups</i> se pueden programar mediante un <i>trigger</i> o disparador, a un cierto horario, generalmente se realiza en la madrugada. 
+
+
+    .row.justify-content-center(data-aos="fade-down").mt-5
+      .col-10.col-lg-4
+        .row.px-2.pt-2.h-100
+          .col-12.m-0.nav-holder2.align-items-center.rounded-15.box-shadow.px-0
+            figure
+              img(src="@/assets/curso/temas/T1/img-44.png", alt="Texto que describa la imagen")
+            .text.p-lg-3.p-4
+              .row.text-center.px-1.pt-1.mt-md-4.pt-md-0.mt-lg-3.mt-xl-4
+                .h4.small-text.mt-sm-3.mt-md-0 Servicio en la nube
+                p.mt-3.small-text <i>Amazon Web Services (Aws), Google Cloud Platform (GCP), Microsoft Azure, IBM Cloud,</i> etc.
+                p.mt-3.small-text Dependiendo de la frecuencia de acceso a la información de respaldo o <i>backups</i>, se pueden utilizar varios planes para disminuir costos.
+
+      .col-10.col-lg-4
+        .row.px-2.pt-2.h-100
+          .col-12.m-0.nav-holder2.align-items-center.rounded-15.box-shadow.px-0
+            figure
+              img(src="@/assets/curso/temas/T1/img-45.png", alt="Texto que describa la imagen")
+            .text.p-lg-3.p-4
+              .row.text-center.px-1.pt-1.mt-1.mt-md-4.mt-lg-3.mt-xl-4.pt-md-0
+                .h4.small-text.mt-1.mt-md-0 Tipos de copias de seguridad 
+                p.mt-3.small-text Hay diferentes tipos de copias de seguridad: Completa, incremental, diferencial, espejo, sintética completa, etc. Por ejemplo, la completa incluye todos los archivos y carpetas seleccionados.
+      .col-10.col-lg-4
+        .row.px-2.pt-2.h-100
+          .col-12.m-0.nav-holder2.align-items-center.rounded-15.box-shadow.px-0
+            figure
+              img(src="@/assets/curso/temas/T1/img-46.png", alt="Texto que describa la imagen")
+            .text.p-lg-3.p-4
+              .row.text-center.px-1.pt-1.mt-1.mt-md-4.mt-lg-3.mt-xl-4.pt-md-0
+                .h4.small-text.mt-1.mt-md-0 Propósito del <i>backup</i>
+                p.mt-3.small-text Respaldar la información generada para prevenir la pérdida total o parcial de la misma, como consecuencia de algún evento.
+                
+    Separador
+
+    #t_1_4.titulo-segundo.color-acento-contenido
+      h2 1.4 Gestión de seguridad de la información
+
+    p.mb-5 Hay diferentes proveedores de servicios que prestan ese servicio en la nube como: <i>Amazon Web Services (Aws), Google Cloud Platform (GCP), Microsoft Azure, IBM Cloud,</i> etc.
+
+
+    .tarjeta.color-pasos-B.p-4
+      PasosB.color-acento-botones
+
+        .row.justify-content-around.align-items-center(titulo="")
+          .col-md-6
+            figure
+              img(src='@/assets/curso/temas/T1/img-47.png', alt='Texto que describa la imagen')
+
+          .col-md-6.mb-4.mb-md-0
+            p Se pueden hacer réplicas de la información para que no esté centralizada en una sola región del servidor. Esto genera un mayor costo, pero tranquilad en caso de alguna contingencia de orden mayor.
+
+        .row.justify-content-around.align-items-center(titulo="")
+          .col-md-6
+            figure
+              img(src='@/assets/curso/temas/T1/img-48.png', alt='Texto que describa la imagen')
+
+          .col-md-6.mb-4.mb-md-0
+            p Es recomendable que la región escogida este cerca de la información para mejorar la latencia o tiempo de respuesta a una petición realizada por un usuario.
+
+        .row.justify-content-around.align-items-center(titulo="")
+          .col-md-6
+            figure
+              img(src='@/assets/curso/temas/T1/img-49.png', alt='Texto que describa la imagen')
+
+          .col-md-6.mb-4.mb-md-0
+            p Para acceder a las instancias en la nube se debe tener una clave cifrada, generada por el proveedor de servicio.
+
+        .row.justify-content-around.align-items-center(titulo="")
+          .col-md-6
+            figure
+              img(src='@/assets/curso/temas/T1/img-50.png', alt='Texto que describa la imagen')
+
+          .col-md-6.mb-4.mb-md-0
+            p La seguridad debe ser tanto interna como externa. En la parte interna se deben crear los grupos de seguridad muy bien definidos, separarlos dependiendo del área en el que trabajan en la empresa y asignarles los permisos necesarios para acceder a la información, según las funciones que desempeñan.. Ejemplo: dependiendo del tipo de empresa se crean diferentes grupos como: administrativos, contabilidad, financiera, ventas, mercadeo, desarrollo, producción, etc.
+
+        .row.justify-content-around.align-items-center(titulo="")
+          .col-md-6
+            figure
+              img(src='@/assets/curso/temas/T1/img-51.png', alt='Texto que describa la imagen')
+
+          .col-md-6.mb-4.mb-md-0
+            p.mb-3 Se deben dar los menores permisos a los usuarios, es decir, solo los necesarios dependiendo de su grupo de trabajo.
+            p.mb-5 Si el empleado trabaja desde casa, se debe asesorar para que lleve un estricto protocolo de acceso a la información de la empresa desde su portátil. 
+
+        .row.justify-content-around.align-items-center(titulo="")
+          .col-md-6
+            figure
+              img(src='@/assets/curso/temas/T1/img-52.png', alt='Texto que describa la imagen')
+
+          .col-md-6.mb-4.mb-md-0
+            p Las contraseñas se deben guardar de forma segura para evitar el acceso a la información de personas fuera de la empresa. Es importante tener diferentes claves cifradas aleatorias para cada servicio. Se debe tener un gestor de contraseñas con autenticación en dos factores y con un límite de tiempo de vencimiento de la clave, por ejemplo, de 30 segundos.
+        
+          
 
 
 </template>
