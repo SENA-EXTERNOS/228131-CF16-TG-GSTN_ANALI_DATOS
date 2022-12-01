@@ -162,7 +162,7 @@
                 p.text-small.mb-2 Para familiarizarse con los mapas por medio de latitud y longitud, Observa los siguientes mapas de Colombia y Medellín, con los 100 puntos de los incidentes de tránsito ocurridos en esta ciudad.
                 p.text-small También observa los gráficos dinámicos generados con la <i>libreria plotly.</i>
               .col-sm-auto
-                a.boton.color-acento-botones(:href="obtenerLink('/downloads/prueba.pdf')" target="_blank")
+                a.boton.color-acento-botones(:href="obtenerLink('/downloads/MEDELLIN2.html')" target="_blank")
                   span(style='color:#12263f !important') Descargar
                   i.fas.fa-file-download(style='color:#12263f !important')
     Separador
