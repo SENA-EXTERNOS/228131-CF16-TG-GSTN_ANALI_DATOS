@@ -186,7 +186,6 @@
             figure
               img(src='@/assets/curso/temas/T1/img-12.png', alt='Texto que describa la imagen')
           .col-md-6
-            h4 <i>Google Colab</i>
             p Se puede trabajar código de <i>Python</i> por celdas, importar librerías para visualización de datos como <i>matplolit, plotly, seaborn,</i> etc.
 
       .py-4.py-md-5(titulo="Power BI – Tableau Public" :icono="require('@/assets/curso/temas/T1/img-11.svg')")
@@ -195,7 +194,6 @@
             figure
               img(src='@/assets/curso/temas/T1/img-13.png', alt='Texto que describa la imagen')
           .col-md-6
-            h4 <i>Power BI – Tableau Public</i>
             p.mb-3 Herramientas para visualización de datos <i>Power BI</i> y <i>Tableau Public</i> en las cuales se pueden hacer tableros de mando o <i>dashboard</i> y contar o narrar una historia sobre los datos o <i>storytelling</i>.
             p.mb-5 Este tipo de herramientas permite conectarse con diferentes tipos de datos y con datos en diferentes bases de datos tanto <i>on premise</i> o en la nube, también se puede publicar los <i>dasboard</i> y <i>storytelling</i> en la nube. 
         
@@ -205,7 +203,6 @@
             figure
               img(src='@/assets/curso/temas/T1/img-14.png', alt='Texto que describa la imagen')
           .col-md-6
-            h4 <i>CartoDB</i>
             p Plataforma para almacenar y visualizar datos espaciales o geográficos; se debe tener latitud y longitud de los puntos para proceder a ubicarlos en el mapa.
 
     
