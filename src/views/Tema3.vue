@@ -148,7 +148,7 @@
                   p Para poner en práctica los conocimientos abordados en este proceso de aprendizaje, se sugiere descargar los archivos que se usaron para realizar la práctica. 
 
                 .col-sm-auto
-                  a.boton.color-acento-botones(href="https://www-ebooks7-24-com.bdigital.sena.edu.co/?il=15156&pg=202 " target="_blank")
+                  a.boton.color-acento-botones(:href="obtenerLink('downloads/Material_descarga.rar')" target="_blank")
                     span Descarga
                     i.fas.fa-file-download
 
