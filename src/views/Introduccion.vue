@@ -13,8 +13,8 @@
         img(src='@/assets/curso/temas/introduccion/img-1.png', alt='mujer con un laptop y un robot')
       .col-md-9
         .cajon-b.color-primario.abajo-derecha.p-1.mb-5
-          p Estimado aprendiz, reciba una cordial bienvenida a este recurso de aprendizaje, orientado al análisis y procesamiento de datos. Durante su desarrollo se abordan los ejes temáticos de: análisis de datos, modelos estadísticos y transformación de datos. Al finalizar el componente formativo, estará en capacidad de verificar la calidad de la información, comparar los datos, filtrarlos, ajustar contenidos de variables y elaborar un documento de depuración de información. Antes de empezar, se sugiere revisar el siguiente video para identificar el contexto de aprendizaje. 
-          p.mb-0 <b>¡Muchos éxitos, que tenga un aprendizaje significativo!</b>
+          p Estimado aprendiz, reciba una cordial bienvenida a este recurso de aprendizaje, orientado al análisis y procesamiento de datos. Durante su desarrollo se abordan los ejes temáticos de: análisis de datos, modelos estadísticos y transformación de datos. Al finalizar el componente formativo, estará en capacidad de verificar la calidad de la información, comparar los datos, filtrarlos, ajustar contenidos de variables y elaborar un documento de depuración de información. 
+          p.mb-0 En el siguiente video conocerá, de forma general, la temática que se estudiará a lo largo del componente formativo.
 
 
     figure.mb-5
