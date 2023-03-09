@@ -328,7 +328,7 @@
       .col-md-8.mb-4.mb-md-0
         AcordionA.mb-5(tipo="a" clase-tarjeta="tarjeta tarjeta--azul")
           .row.justify-content-around.align-items-center(titulo="Promedio de mujeres que tienen incidentes de tránsito")
-            .col-md-1 El promedio de las mujeres que tienen incidentes de tránsito sería: (μ<span class="exponentes">1</span>) y el promedio de los hombres que tienen incidentes de tránsito sería: μ<span class="exponentes">2</span>
+              p El promedio de las mujeres que tienen incidentes de tránsito sería: (μ<span class="exponentes">1</span>) y el promedio de los hombres que tienen incidentes de tránsito sería: μ<span class="exponentes">2</span>
               p.mb-4 Para ello se propone una prueba de hipótesis:
               p.mb-4 Las dos medias son iguales μ<span class="exponentes">1</span> = μ<span class="exponentes">2</span> pasando μ<span class="exponentes">2</span> a la izquierda resulta  μ<span class="exponentes">1</span> - μ<span class="exponentes">2</span> = 0
               p.mb-4 Las dos medias son diferentes μ<span class="exponentes">1</span> ≠ μ<span class="exponentes">2</span>, pasando μ<span class="exponentes">2</span> a la izquierda μ<span class="exponentes">1</span> - μ<span class="exponentes">2</span> ≠ 0
