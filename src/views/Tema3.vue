@@ -21,7 +21,7 @@
         .cajon.color-acento-botones.p-4.mb-4.color-amarillo
           p.mb-0 Se trabaja con información real, datos sobre incidentes de tránsito en Medellín obtenidos de la página de datos abiertos de la Alcaldía.
 
-    p.mb-5 La finalidad de este componente es tener buenas bases estadísticas para el análisis de datos, utilizando la técnica Análisis exploratorio de datos, EDA (<i>Exploratory Data Analysis</i>).
+    p.mb-5 La finalidad de este componente es tener buenas bases estadísticas para el análisis de datos, utilizando la técnica Análisis exploratorio de datos, EDA (Exploratory Data Analysis).
 
 
 
@@ -47,10 +47,10 @@
           .col-md-6.mb-4.mb-md-0
             p.mb-4 La fecha está en formato objeto o <i>string</i> y se puede cambiar a formato fecha, como se observa en la figura: Muestra los tipos de columnas.
             p.mb-0 Utilizando:
-            p.mb-4 <i>df['Fecha_incidente']=pd.to_datetime(df['Fecha_incidente'])</i>
+            p.mb-4 df['Fecha_incidente']=pd.to_datetime(df['Fecha_incidente'])
             p.mb-1 Se puede hacer de otra forma utilizando:
-            p.mb-0 <i>df["Fecha_incidente"] = </i>
-            p.mb-5 <i>df["Fecha_incidente"].astype("datetime64")</i>
+            p.mb-0 df["Fecha_incidente"] = 
+            p.mb-5 df["Fecha_incidente"].astype("datetime64")
         
           .col-md-6
             figure
@@ -58,7 +58,7 @@
           
         .row.justify-content-center.align-items-center
           .col-md-6.mb-4.mb-md-0
-            p.mb-4 Se pueden saber los tipos de variables de las columnas utilizando el método <i>df.dtypes</i>
+            p.mb-4 Se pueden saber los tipos de variables de las columnas utilizando el método df.dtypes
         
           .col-md-6
             figure
@@ -99,7 +99,7 @@
         .row.justify-content-center.align-items-center
           .col-md-6.mb-4.mb-md-0
             p.mb-4 Para la variable Edad este tipo objeto o <i>string</i> se debe convertir primero a numérica antes de discretizar, utilizando la librería de pandas con el alias o abreviación pd.
-            p.mb-5 <i>df['Edad'] = pd.to_numeric(df['Edad'],errors = 'coerce')</i>
+            p.mb-5 df['Edad'] = pd.to_numeric(df['Edad'],errors = 'coerce')
         
           .col-md-6
             figure

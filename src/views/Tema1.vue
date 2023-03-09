@@ -30,6 +30,7 @@
         .row.justify-content-center.align-items-center
           .col-md-8.mb-4.mb-md-0
             h4.mb-3 <i>Data frame</i>
+            h5.mb-0 Revisar la calidad de los datos del <i>data frame</i>
             p.mb-4 Información que se analiza dentro de Google Colab. Después de pasar los datos a un <i>data frame</i>, se debe revisar la calidad de los mismos, como: datos repetidos, valores únicos, datos nulos, datos nan, datos atípicos y nombres de las columnas. Se observan los tipos de datos en cada columna, sin son <i>string</i>, objetos, numéricos, tipos de numéricos: enteros, flotantes, lógicos como booleanos cuyos valores son verdadero o falso y tipo fecha. Se revisa si es necesario convertirlos, como por ejemplo: de <i>string</i> a fecha o de <i>string</i> a numérico. 
         
           .col-md-3

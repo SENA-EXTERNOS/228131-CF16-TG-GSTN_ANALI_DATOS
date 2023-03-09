@@ -311,21 +311,6 @@
                 p.mb-0 Y= a+b<span class="exponentes">1</span>* X<span class="exponentes">1</span> + b<span class="exponentes">2</span> * X<span class="exponentes">2</span> + b<span class="exponentes">3</span> * X<span class="exponentes">3</span> + b<span class="exponentes">4</span> * X<span class="exponentes">4</span> +...+ b<span class="exponentes">n</span> * X<span class="exponentes">n</span>
 
 
-    .row.mt-5
-      .col-10.offset-1
-        .tarjeta.cuadro-descarga.p-3.mb-5
-          .row.justify-content-around.align-items-center
-            .col-3.col-sm-2.col-lg-1
-              img(src="@/assets/curso/temas/T2/img-15.svg")
-            .col
-              .row.justify-content-between.align-items-center
-                .col.mb-3.mb-sm-0
-                  p Para reforzar los conceptos sobre regresiones, se sugiere consultar el libro Estadística descriptiva regresión y probabilidades con aplicaciones, el cual se encuentra en el material complementario.
-
-                .col-sm-auto
-                  a.boton.color-acento-botones(href="https://www-ebooks7-24-com.bdigital.sena.edu.co/?il=15156&pg=202 " target="_blank")
-                    span Enlace web
-                    i.fas.fa-link
 
 
     h2 Corroboración de hipótesis 
@@ -343,7 +328,7 @@
       .col-md-8.mb-4.mb-md-0
         AcordionA.mb-5(tipo="a" clase-tarjeta="tarjeta tarjeta--azul")
           .row.justify-content-around.align-items-center(titulo="Promedio de mujeres que tienen incidentes de tránsito")
-            .col-md-1El promedio de las mujeres que tienen incidentes de tránsito sería: (μ<span class="exponentes">1</span>) y el promedio de los hombres que tienen incidentes de tránsito sería: μ<span class="exponentes">2</span>
+            .col-md-1 El promedio de las mujeres que tienen incidentes de tránsito sería: (μ<span class="exponentes">1</span>) y el promedio de los hombres que tienen incidentes de tránsito sería: μ<span class="exponentes">2</span>
               p.mb-4 Para ello se propone una prueba de hipótesis:
               p.mb-4 Las dos medias son iguales μ<span class="exponentes">1</span> = μ<span class="exponentes">2</span> pasando μ<span class="exponentes">2</span> a la izquierda resulta  μ<span class="exponentes">1</span> - μ<span class="exponentes">2</span> = 0
               p.mb-4 Las dos medias son diferentes μ<span class="exponentes">1</span> ≠ μ<span class="exponentes">2</span>, pasando μ<span class="exponentes">2</span> a la izquierda μ<span class="exponentes">1</span> - μ<span class="exponentes">2</span> ≠ 0
