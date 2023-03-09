@@ -18,7 +18,7 @@
           .col-md-8.mb-4.mb-md-0
             h4.mb-3 EDA
             p.mb-4 <b>Análisis exploratorio de datos</b>
-            p.mb-5Consiste en tomar los datos en algunos de los formatos, por lo general CSV, separados por coma (,) o punto y coma (;) o cualquier otro símbolo de separación; también los datos podrían estar en formato de libro de excel .xlsx.
+            p.mb-5 Consiste en tomar los datos en algunos de los formatos, por lo general CSV, separados por coma (,) o punto y coma (;) o cualquier otro símbolo de separación; también los datos podrían estar en formato de libro de excel .xlsx.
 
             p.mb-5 Se utiliza Python para la lectura de los datos, pasarlos a <i>data frame</i> y convertirlos a un formato tipo tabla, con filas y columnas.
             p.mb-5 Se trabaja con información real, datos de incidentes viales obtenidos de la página de datos abiertos de la Alcaldía de Medellín (Alcaldía de Medellín, 2022).
@@ -42,7 +42,7 @@
             p.mb-5 <i>df['Fecha_incidente']=pd.to_datetime(df['Fecha_incidente']),</i> significa que mediante pandas con el alias o abreviación pd se utiliza el método <i>to_datetime</i> para convertir la columna a formato fecha. 
             p.mb-5 Otra forma de hacerlo es:
             p.mb-5 <i>df["Fecha_incidente"] = df["Fecha_incidente"].astype("datetime64").</i>
-            p.mb-5  Al comando <i>astype</i>, internamente se le pasa el tipo de dato; en este caso, <i>datetime64</i>, podría ser flotante o entero si se necesita convertir un dato a flotante o a entero.
+            p.mb-5 Al comando astype, internamente se le pasa el tipo de dato; en este caso, datetime64, podría ser flotante o entero si se necesita convertir un dato a flotante o a entero.
         
           .col-md-3
             figure
@@ -71,7 +71,7 @@
         .row.justify-content-center.align-items-center
           .col-md-8.mb-4.mb-md-0
             h4.mb-3 Dimensión del <i>data frame</i>
-            p.mb-5 Para saber la dimensión del <i>data frame</i> ejemplo: <i>df.shape</i>, dará el número de filas y columnas del <i>data frame</i>. En los datos de incidentes de tránsito se obtiene (235845, 19), el primer elemento es el total de filas, el segundo elemento el total de columnas.
+            p.mb-5 Para saber la dimensión del <i>data frame</i>, como por ejemplo: <i>df.shape</i>, dará el número de filas y columnas del <i>data frame</i>. En los datos de incidentes de tránsito se obtiene (235845, 19), el primer elemento es el total de filas, el segundo elemento el total de columnas.
         
           .col-md-3
             figure
@@ -81,12 +81,13 @@
           .col-md-12.mb-4.mb-md-0
             h4.mb-3 Analizar los datos
             p.mb-3 <b>Analizar los datos categóricos ordinales y nominales</b>
-            p.mb-1 Categóricos: <i>object</i>
-            p.mb-1 Numéricos: <i>int64</i>, significa valores enteros o discretos, representa un entero de 64 bits.
-            p.mb-5 Numéricos: <i>float64</i>(continuos), significa que toman valores reales de 64 bits.
+            p.mb-1 Categóricos: <em>object</em>
+            p.mb-1 Numéricos: <em>int64</em>, significa valores enteros o discretos, representa un entero de 64 bits.
+            p.mb-5 Numéricos: <em>float64</em> (continuos), significa que toman valores reales de 64 bits.
             p.mb-5 En 64 bits, el rango es de -9.223.372.036.854.775.808 hasta 9.223.372.036.854.775.807.
             p.mb-5 Categórico ordinal: valores que representan categorías con alguna clasificación intrínseca, tiene características de orden como, por ejemplo: malo, bueno, excelente.
-            p.mb-5 Categórico ordinal: valores que representan categorías con alguna clasificación intrínseca, tiene características de orden como, por ejemplo: malo, bueno, excelente.
+            p.mb-5 Categórico nominal: representa categorías sin clasificación intrínseca, ejemplo: las marcas de zapatos, género, raza, etnia.
+
             p.mb-5 Observar las primeras y las últimas filas del <i>data frame</i>; observar una columna en particular, también una fila en particular, tomar un número de filas del <i>data frame</i>.
 
         .row.justify-content-center.align-items-center
@@ -101,40 +102,40 @@
         .row.justify-content-center.align-items-center
           .col-md-12.mb-4.mb-md-0
             h4.mb-3 Estadísticos descriptivos básicos
-            p.mb-5 Para una columna numérica, mediante <i>df.describe()</i> se obtiene:
-            p.mb-5 El valor máximo, valor mínimo, promedio, desviación estándar, cuartil1 (Q1), cuartil2 (Q2), cuartil3 (Q3).
-            p.mb-5 Contar los valores de una columna utilizando el método: <i>value_counts</i>(), ejemplo: <i>df['Comuna'].value_counts()</i>, significa que en la columna Comuna se obtendrá el número de datos por cada columna.
-            p.mb-5 La Candelaria 36985, Castilla 22883, Laureles Estadio 19922, etc.
-            p.mb-0 También se puede observar el porcentaje de esos valores referente al total, ejemplo:
-            p.mb-5 <i>(df['Clase_incidente'].value_counts() / len(df)).sort_values(ascending=False)</i>
-            p.mb-5 Significa que el total de valores de la columna incidente se divide por la longitud del <i>data frame</i> y ordenado de mayor a menor. Para obtener el número de filas o longitud del <i>data frame</i>, se utiliza el comando <i>len().</i>.
+            p Para una columna numérica, mediante <i>df.describe()</i> se obtiene:
+            p El valor máximo, valor mínimo, promedio, desviación estándar, cuartil1 (Q1), cuartil2 (Q2), cuartil3 (Q3).
+            p Contar los valores de una columna utilizando el método: <i>value_counts</i>(), ejemplo: <i>df['Comuna'].value_counts()</i>, significa que en la columna Comuna se obtendrá el número de datos por cada columna.
+            p La Candelaria 36985, Castilla 22883, Laureles Estadio 19922, etc.
+            p También se puede observar el porcentaje de esos valores referente al total, ejemplo:
+            p <i>(df['Clase_incidente'].value_counts() / len(df)).sort_values(ascending=False)</i>
+            p Significa que el total de valores de la columna incidente se divide por la longitud del <i>data frame</i> y ordenado de mayor a menor. Para obtener el número de filas o longitud del <i>data frame</i>, se utiliza el comando <i>len().</i>.
 
         .row.justify-content-center.align-items-center
           .col-md-12.mb-4.mb-md-0
             h4.mb-3 Reemplazar símbolos
-            p.mb-5 Se puede reemplazar un símbolo en una columna mediante:
-            p.mb-5 <i>df_limit['Latitud']=df_limit['Latitud'].replace(',','.',regex=True),</i>  significa que en la columna Latitud, se reemplaza la coma por punto, para que no presente errores a nivel de cálculos.
+            p Se puede reemplazar un símbolo en una columna mediante:
+            p <i>df_limit['Latitud']=df_limit['Latitud'].replace(',','.',regex=True),</i>  significa que en la columna Latitud, se reemplaza la coma por punto, para que no presente errores a nivel de cálculos.
 
-            p.mb-0 Para cambiar la columna latitud a valor numérico mediante:
-            p.mb-5 <i>df_limit['Latitud'] = pd.to_numeric(df_limit['Latitud'],errors = 'coerce')</i>
-            p.mb-0 Para obtener los tipos de datos del <i>data frame</i> se utiliza el método <i>dtypes</i> ejemplo:
+            p Para cambiar la columna latitud a valor numérico mediante:
+            p <i>df_limit['Latitud'] = pd.to_numeric(df_limit['Latitud'],errors = 'coerce')</i>
+            p Para obtener los tipos de datos del <i>data frame</i> se utiliza el método <i>dtypes</i> ejemplo:
 
-            p.mb-5 <i>df_limit.dtypes,</i> resultando <i>Gravedad_victima object</i>, Año  <i>float64, Num_dia  float64</i>, etc.
+            p <i>df_limit.dtypes,</i> resultando <i>Gravedad_victima object</i>, Año  <i>float64, Num_dia  float64</i>, etc.
 
-            p.mb-0 Para contar el total de valores nulos en el data frame, se le colocó el nombre <i>df_limit</i> y se utiliza:
-            p.mb-0 <i>df_limit.isnull().sum()</i>
-            p.mb-5 <i>df.isnull()</i>  pregunta si hay valores nulos en el <i>data frame.</i>
+            p Para contar el total de valores nulos en el data frame, se le colocó el nombre <i>df_limit</i> y se utiliza:
+            p <i>df_limit.isnull().sum()</i>
+            p <i>df.isnull()</i>  pregunta si hay valores nulos en el <i>data frame.</i>
 
         .row.justify-content-center.align-items-center
           .col-md-12.mb-4.mb-md-0
             h4.mb-3 Datos aleatorios
-            p.mb-5 Se pueden tomar datos aleatorios de un <i>data frame</i> en Python importando la librería <i>random</i> mediante <i>import random</i>, muestreo10 = <i>df.sample</i>(n=10), significa que toma una muestra aleatoria de 10 elementos del <i>data frame</i> llamado df y lo coloca en la variable de nombre muestreo10 que sería un <i>data frame</i> de 10 elementos.
+            p Se pueden tomar datos aleatorios de un <i>data frame</i> en Python importando la librería <i>random</i> mediante <i>import random</i>, muestreo10 = <i>df.sample</i>(n=10), significa que toma una muestra aleatoria de 10 elementos del <i>data frame</i> llamado df y lo coloca en la variable de nombre muestreo10 que sería un <i>data frame</i> de 10 elementos.
 
-            p.mb-0 Una selección aleatoria del 10 % de la tabla utilizando el comando simple, ejemplo:
-            p.mb-5 <i>pob_10 = df.sample(frac =.1)</i>
-            p.mb-5 Se guarda el <i>data frame</i> con el 10 % del total en la variable pob_10.
-            p.mb-5 Si se requiere un 20 % se escribiría pob_20 = <i>df.sample(frac =.2).</i>
-            p.mb-5 Se guarda el <i>data frame</i> con el 20 % del total en la variable pob_20.
+            p Una selección aleatoria del 10 % de la tabla utilizando el comando simple, ejemplo:
+            p <i>pob_10 = df.sample(frac =.1)</i>
+            p Se guarda el <i>data frame</i> con el 10 % del total en la variable pob_10.
+            p Si se requiere un 20 % se escribiría pob_20 = <i>df.sample(frac =.2).</i>
+            p Se guarda el <i>data frame</i> con el 20 % del total en la variable pob_20.
 
 
     p.mb-5 A continuación, se presentan los valores de la columna condición de forma porcentual.
