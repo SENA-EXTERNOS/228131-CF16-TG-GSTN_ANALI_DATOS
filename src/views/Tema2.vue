@@ -35,7 +35,7 @@
             p.mb-4 <b>Numéricos:</b> int64, significa valores enteros o discretos, representa un entero de 64 bits.
             p.mb-4 <b>Numéricos:</b> float64 (continuos), significa que toman valores reales de 64 bits.
             p.mb-4 En 64 bits, el rango es de -9.223.372.036.854.775.808 hasta 9.223.372.036.854.775.807
-            p.mb-4 <i>df.info()</i> da información sobre el tipo de variables en las columnas del <i>data frame.</i> También df.dtypes, nos da información sobre las variables.
+            p.mb-4 df.info() da información sobre el tipo de variables en las columnas del <i>data frame.</i> También df.dtypes, nos da información sobre las variables.
         
           .col-md-6
             figure
@@ -45,7 +45,7 @@
           .col-md-6.mb-4.mb-md-0
             p.mb-4 La columna “Gravedad_victima” es una variable de tipo objeto no nula.
             p.mb-4 La columna “Edad” es una variable de tipo objeto no nula: 17, 20, 18,19, 39.
-            p.mb-4 <i>df.nunique()</i> permite saber los valores únicos que toma la columna. 
+            p.mb-4 df.nunique() permite saber los valores únicos que toma la columna. 
             p.mb-4 La columna “Gravedad_victima” tiene 2 valores únicos los cuales son “Heridos y Muertos”. 
         
           .col-md-6
@@ -149,7 +149,7 @@
           p.mb-4 Se va a extraer una muestra de 10 personas de una muestra de 50 personas. El primer individuo seleccionado para la muestra es el número 5 con un tamaño o intervalo de 4, decidido por el investigador.
           p.mb-4 Los elementos de la muestra serían: 5, 9, 13, 17, 21, 25, 29, 33, 37, 41. 
           p.mb-4 En Google Colab se puede hacer el muestreo aleatorio simple, importando la librería <i>random</i>, relacionada con valores aleatorios, se carga mediante <i>import random.</i>
-          p.mb-4 muestreo15= df.sample(n=15), significa que de la <i>data frame</i> llamado <i>df</i> toma una muestra aleatoria de 15 elementos de la población 235845, se guarda en la variable muestreo15.
+          p.mb-4 muestreo15= df.sample(n=15), significa que de la <i>data frame</i> llamado df toma una muestra aleatoria de 15 elementos de la población 235845, se guarda en la variable muestreo15.
       
         .col-md-6
           figure
@@ -241,27 +241,27 @@
           .col-md-12.mb-4.mb-md-0
             p 
               span.fad ● 
-              |  Si el coeficiente de correlación de <i>Pearson</i> es 1 se habla de correlación perfecta. 
+              |  Si el coeficiente de correlación de Pearson es 1 se habla de correlación perfecta. 
             p
               span.fad ● 
-              |  Si el coeficiente de correlación de <i>Pearson</i> es 0 se habla de correlación nula. 
+              |  Si el coeficiente de correlación de Pearson es 0 se habla de correlación nula. 
             p
               span.fad ● 
-              |  Si el coeficiente de correlación de <i>Pearson</i> está entre 0.8 y 1, sin incluir los extremos, se habla de correlación muy alta. 
+              |  Si el coeficiente de correlación de Pearson está entre 0.8 y 1, sin incluir los extremos, se habla de correlación muy alta. 
 
             p 
               span.fad ● 
-              |  Si el coeficiente de correlación de <i>Pearson</i> está entre 0.6 y 0.8, sin incluir los extremos, se habla de correlación alta. 
+              |  Si el coeficiente de correlación de Pearson está entre 0.6 y 0.8, sin incluir los extremos, se habla de correlación alta. 
             p
               span.fad ● 
-              |  Si el coeficiente de correlación de <i>Pearson</i> esta entre 0.4 y 0.6, sin incluir los extremos, se habla de correlación moderada. 
+              |  Si el coeficiente de correlación de Pearson esta entre 0.4 y 0.6, sin incluir los extremos, se habla de correlación moderada. 
             p
               span.fad ● 
-              |  Si el coeficiente de correlación de <i>Pearson</i> esta entre 0.4 y 0.2, sin incluir los extremos, se habla de correlación baja.
+              |  Si el coeficiente de correlación de Pearson esta entre 0.4 y 0.2, sin incluir los extremos, se habla de correlación baja.
 
             p
               span.fad ● 
-              |  Si el coeficiente de correlación de <i>Pearson</i> esta entre 0 y 0.2, sin incluir los extremos se habla de correlación muy baja.
+              |  Si el coeficiente de correlación de Pearson esta entre 0 y 0.2, sin incluir los extremos se habla de correlación muy baja.
 
             
 
@@ -275,7 +275,7 @@
         
     h2 Regresiones
 
-    p.mb-5 La presente sección se trabaja con la conocida data de precios de casas en Boston, Estados Unidos; para ello ver el documento Jupyter notebook en el material para descargar de nombre regresion.ipynb, donde se maneja tanto la regresión lineal simple, como la regresión lineal múltiple.
+    p.mb-5 La presente sección se trabaja con la conocida <i>data</i> de precios de casas en Boston, Estados Unidos; para ello ver el documento Jupyter notebook en el material para descargar de nombre regresion.ipynb, donde se maneja tanto la regresión lineal simple, como la regresión lineal múltiple.
 
 
 

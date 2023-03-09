@@ -100,7 +100,7 @@ export default {
     {
       tema: 'Análisis de datos',
       referencia:
-        'Aguilar, J. (2021). Estadística descriptiva, regresión y probabilidad con aplicaciones. Ediciones de la U.',
+        'Aguilar, J. (2021). <i>Estadística descriptiva, regresión y probabilidad con aplicaciones.</i> Ediciones de la U.',
       tipo: 'Libro digital',
       link: 'https://www-ebooks7-24-com.bdigital.sena.edu.co/?il=15156&pg=202',
     },
@@ -114,14 +114,14 @@ export default {
     {
       tema: 'Modelos estadísticos',
       referencia:
-        'Triola, M. (2018). Estadística (12 edición). Pearson Educación.',
+        'Triola, M. (2018).<i> Estadística</i> (12 edición). Pearson Educación.',
       tipo: 'Libro digital',
       link: 'https://www-ebooks7-24-com.bdigital.sena.edu.co/?il=7386&pg=149',
     },
     {
       tema: 'Modelos estadísticos',
       referencia:
-        'Toomey, D. (2018). Learning Jupyter 5: Explore interactive computing using Python, Java, JavaScript, R, Julia, and JupyterLab (2nd Edition). Packt Publishing.',
+        'Toomey, D. (2018).<i> Learning Jupyter 5: Explore interactive computing using Python, Java, JavaScript, R, Julia, and JupyterLab</i> (2nd Edition). Packt Publishing.',
       tipo: 'Libro digital',
       link:
         'https://search-ebscohost-com.bdigital.sena.edu.co/login.aspx?direct=true&db=e000xww&AN=1881491&lang=es&site=ehost-live',
@@ -129,7 +129,7 @@ export default {
     {
       tema: 'Modelos estadísticos',
       referencia:
-        'Toomey, D. (2017) Jupyter for data science. Packt Publishing.',
+        'Toomey, D. (2017)<i> Jupyter for data science. </i>Packt Publishing.',
       tipo: 'Libro digital',
       link:
         'https://search-ebscohost-com.bdigital.sena.edu.co/login.aspx?direct=true&db=e000xww&AN=1637911&lang=es&site=ehost-live.',
@@ -233,12 +233,12 @@ export default {
     },
     {
       referencia:
-        'Martínez, C. (2019). Estadística y muestreo (14 edición). Ecoe ediciones. ',
+        'Martínez, C. (2019). <i>Estadística y muestreo</i> (14 edición). Ecoe ediciones. ',
       link: 'https://www-ebooks7-24-com.bdigital.sena.edu.co/?il=9278&pg=387',
     },
     {
       referencia:
-        'Martínez, C. (2019). Estadística básica aplicada (5ta edición). Ecoe ediciones.',
+        'Martínez, C. (2019). <i>Estadística básica aplicada</i> (5ta edición). Ecoe ediciones.',
       link: 'https://www-ebooks7-24-com.bdigital.sena.edu.co/?il=8975&pg=82',
     },
     {
@@ -265,7 +265,7 @@ export default {
     },
     {
       referencia:
-        'Vladimirovna, O. &  Gutiérrez, E. (2016). Estadística inferencial 1 para ingeniería y ciencias. Grupo Editorial Patria. ',
+        'Vladimirovna, O. &  Gutiérrez, E. (2016).<i> Estadística inferencial 1 para ingeniería y ciencias.</i> Grupo Editorial Patria. ',
       link:
         'https://elibro-net.bdigital.sena.edu.co/es/ereader/senavirtual/40474?page=69',
     },

@@ -39,9 +39,9 @@
         .row.justify-content-center.align-items-center
           .col-md-8.mb-4.mb-md-0
             h4.mb-3 Convertir a formato fecha
-            p.mb-5 <i>df['Fecha_incidente']=pd.to_datetime(df['Fecha_incidente']),</i> significa que mediante pandas con el alias o abreviación pd se utiliza el método <i>to_datetime</i> para convertir la columna a formato fecha. 
+            p.mb-5 df['Fecha_incidente']=pd.to_datetime(df['Fecha_incidente']), significa que mediante pandas con el alias o abreviación pd se utiliza el método to_datetime para convertir la columna a formato fecha. 
             p.mb-5 Otra forma de hacerlo es:
-            p.mb-5 <i>df["Fecha_incidente"] = df["Fecha_incidente"].astype("datetime64").</i>
+            p.mb-5 df["Fecha_incidente"] = df["Fecha_incidente"].astype("datetime64").
             p.mb-5 Al comando astype, internamente se le pasa el tipo de dato; en este caso, datetime64, podría ser flotante o entero si se necesita convertir un dato a flotante o a entero.
         
           .col-md-3
@@ -71,7 +71,7 @@
         .row.justify-content-center.align-items-center
           .col-md-8.mb-4.mb-md-0
             h4.mb-3 Dimensión del <i>data frame</i>
-            p.mb-5 Para saber la dimensión del <i>data frame</i>, como por ejemplo: <i>df.shape</i>, dará el número de filas y columnas del <i>data frame</i>. En los datos de incidentes de tránsito se obtiene (235845, 19), el primer elemento es el total de filas, el segundo elemento el total de columnas.
+            p.mb-5 Para saber la dimensión del <i>data frame</i>, como por ejemplo: df.shape, dará el número de filas y columnas del <i>data frame</i>. En los datos de incidentes de tránsito se obtiene (235845, 19), el primer elemento es el total de filas, el segundo elemento el total de columnas.
         
           .col-md-3
             figure
@@ -81,9 +81,9 @@
           .col-md-12.mb-4.mb-md-0
             h4.mb-3 Analizar los datos
             p.mb-3 <b>Analizar los datos categóricos ordinales y nominales</b>
-            p.mb-1 Categóricos: <em>object</em>
-            p.mb-1 Numéricos: <em>int64</em>, significa valores enteros o discretos, representa un entero de 64 bits.
-            p.mb-5 Numéricos: <em>float64</em> (continuos), significa que toman valores reales de 64 bits.
+            p.mb-1 Categóricos: object
+            p.mb-1 Numéricos: int64, significa valores enteros o discretos, representa un entero de 64 bits.
+            p.mb-5 Numéricos: float64 (continuos), significa que toman valores reales de 64 bits.
             p.mb-5 En 64 bits, el rango es de -9.223.372.036.854.775.808 hasta 9.223.372.036.854.775.807.
             p.mb-5 Categórico ordinal: valores que representan categorías con alguna clasificación intrínseca, tiene características de orden como, por ejemplo: malo, bueno, excelente.
             p.mb-5 Categórico nominal: representa categorías sin clasificación intrínseca, ejemplo: las marcas de zapatos, género, raza, etnia.
@@ -102,39 +102,39 @@
         .row.justify-content-center.align-items-center
           .col-md-12.mb-4.mb-md-0
             h4.mb-3 Estadísticos descriptivos básicos
-            p Para una columna numérica, mediante <i>df.describe()</i> se obtiene:
+            p Para una columna numérica, mediante df.describe() se obtiene:
             p El valor máximo, valor mínimo, promedio, desviación estándar, cuartil1 (Q1), cuartil2 (Q2), cuartil3 (Q3).
-            p Contar los valores de una columna utilizando el método: <i>value_counts</i>(), ejemplo: <i>df['Comuna'].value_counts()</i>, significa que en la columna Comuna se obtendrá el número de datos por cada columna.
+            p Contar los valores de una columna utilizando el método: value_counts(), ejemplo: df['Comuna'].value_counts(), significa que en la columna Comuna se obtendrá el número de datos por cada columna.
             p La Candelaria 36985, Castilla 22883, Laureles Estadio 19922, etc.
             p También se puede observar el porcentaje de esos valores referente al total, ejemplo:
-            p <i>(df['Clase_incidente'].value_counts() / len(df)).sort_values(ascending=False)</i>
-            p Significa que el total de valores de la columna incidente se divide por la longitud del <i>data frame</i> y ordenado de mayor a menor. Para obtener el número de filas o longitud del <i>data frame</i>, se utiliza el comando <i>len().</i>.
+            p (df['Clase_incidente'].value_counts() / len(df)).sort_values(ascending=False)
+            p Significa que el total de valores de la columna incidente se divide por la longitud del <i>data frame</i> y ordenado de mayor a menor. Para obtener el número de filas o longitud del <i>data frame</i>, se utiliza el comando len().
 
         .row.justify-content-center.align-items-center
           .col-md-12.mb-4.mb-md-0
             h4.mb-3 Reemplazar símbolos
             p Se puede reemplazar un símbolo en una columna mediante:
-            p <i>df_limit['Latitud']=df_limit['Latitud'].replace(',','.',regex=True),</i>  significa que en la columna Latitud, se reemplaza la coma por punto, para que no presente errores a nivel de cálculos.
+            p df_limit['Latitud']=df_limit['Latitud'].replace(',','.',regex=True), significa que en la columna Latitud, se reemplaza la coma por punto, para que no presente errores a nivel de cálculos.
 
             p Para cambiar la columna latitud a valor numérico mediante:
-            p <i>df_limit['Latitud'] = pd.to_numeric(df_limit['Latitud'],errors = 'coerce')</i>
-            p Para obtener los tipos de datos del <i>data frame</i> se utiliza el método <i>dtypes</i> ejemplo:
+            p df_limit['Latitud'] = pd.to_numeric(df_limit['Latitud'],errors = 'coerce')
+            p Para obtener los tipos de datos del <i>data frame</i> se utiliza el método dtypes ejemplo:
 
-            p <i>df_limit.dtypes,</i> resultando <i>Gravedad_victima object</i>, Año  <i>float64, Num_dia  float64</i>, etc.
+            p df_limit.dtypes, resultando Gravedad_victima object, Año  float64, Num_dia  float64, etc.
 
-            p Para contar el total de valores nulos en el data frame, se le colocó el nombre <i>df_limit</i> y se utiliza:
-            p <i>df_limit.isnull().sum()</i>
-            p <i>df.isnull()</i>  pregunta si hay valores nulos en el <i>data frame.</i>
+            p Para contar el total de valores nulos en el data frame, se le colocó el nombre df_limit y se utiliza:
+            p df_limit.isnull().sum()
+            p df.isnull()  pregunta si hay valores nulos en el <i>data frame.</i>
 
         .row.justify-content-center.align-items-center
           .col-md-12.mb-4.mb-md-0
             h4.mb-3 Datos aleatorios
-            p Se pueden tomar datos aleatorios de un <i>data frame</i> en Python importando la librería <i>random</i> mediante <i>import random</i>, muestreo10 = <i>df.sample</i>(n=10), significa que toma una muestra aleatoria de 10 elementos del <i>data frame</i> llamado df y lo coloca en la variable de nombre muestreo10 que sería un <i>data frame</i> de 10 elementos.
+            p Se pueden tomar datos aleatorios de un <i>data frame</i> en Python importando la librería <i>random</i> mediante <i>import random</i>, muestreo10 = df.sample(n=10), significa que toma una muestra aleatoria de 10 elementos del <i>data frame</i> llamado df y lo coloca en la variable de nombre muestreo10 que sería un <i>data frame</i> de 10 elementos.
 
             p Una selección aleatoria del 10 % de la tabla utilizando el comando simple, ejemplo:
-            p <i>pob_10 = df.sample(frac =.1)</i>
+            p pob_10 = df.sample(frac =.1)
             p Se guarda el <i>data frame</i> con el 10 % del total en la variable pob_10.
-            p Si se requiere un 20 % se escribiría pob_20 = <i>df.sample(frac =.2).</i>
+            p Si se requiere un 20 % se escribiría pob_20 = df.sample(frac =.2).
             p Se guarda el <i>data frame</i> con el 20 % del total en la variable pob_20.
 
 
@@ -175,7 +175,7 @@
       .col-4.col-lg-3
         img(src="@/assets/curso/temas/T1/img-10.svg")
       .col-8
-        p La profundización en el manejo de herramientas para el análisis y procesamiento de los datos, tiene como propósito mejorar la técnica conocida como Análisis exploratorio de datos, <i>EDA (Exploratory Data Analysis)</i>, utilizando diferentes herramientas de procesamiento, análisis de datos y visualización.
+        p La profundización en el manejo de herramientas para el análisis y procesamiento de los datos, tiene como propósito mejorar la técnica conocida como Análisis exploratorio de datos, EDA (Exploratory Data Analysis), utilizando diferentes herramientas de procesamiento, análisis de datos y visualización.
         p Entre las herramientas se encuentran Google Colab, Power BI, Tableau, CartoDb.
 
     
@@ -301,7 +301,7 @@
 
         .row.justify-content-around.align-items-center(titulo="")
           .col-md-6.mb-4.mb-md-0
-            p En Power BI se pueden crear un <i>dashboard</i> o tablero de mando luego de hacer la limpieza de los datos que consiste en borrar los datos duplicados, los valores<i> nan</i>, los valores nulos, el tipo de variable correcto para cada columna, etc.
+            p En Power BI se pueden crear un <i>dashboard</i> o tablero de mando luego de hacer la limpieza de los datos que consiste en borrar los datos duplicados, los valores nan, los valores nulos, el tipo de variable correcto para cada columna, etc.
         
           .col-md-6
             figure
@@ -392,7 +392,7 @@
       SlyderA(tipo="b")
         .row.justify-content-around.align-items-center
           .col-md-6.mb-4.mb-md-0
-            h4.mb-3 <i>Tableau Public</i>
+            h4.mb-3 Tableau Public
             p Es otra herramienta para la visualización y el análisis de datos. Al conectar, se escoge el tipo de fuente de los datos, en este caso: archivo de texto.
         
           .col-md-6
@@ -466,7 +466,7 @@
             .text.p-lg-3.p-4
               .row.text-center.px-1.pt-1.mt-md-4.pt-md-0.mt-lg-3.mt-xl-4
                 .h4.small-text.mt-sm-3.mt-md-0 Servicio en la nube
-                p.mt-3.small-text <i>Amazon Web Services (Aws), Google Cloud Platform (GCP), Microsoft Azure, IBM Cloud,</i> etc.
+                p.mt-3.small-text Amazon Web Services (Aws), Google Cloud Platform (GCP), Microsoft Azure, IBM Cloud, etc.
                 p.mt-3.small-text Dependiendo de la frecuencia de acceso a la información de respaldo o <i>backups</i>, se pueden utilizar varios planes para disminuir costos.
 
       .col-10.col-lg-4
@@ -488,7 +488,7 @@
                 .h4.small-text.mt-1.mt-md-0 Propósito del <i>backup</i>
                 p.mt-3.small-text Respaldar la información generada para prevenir la pérdida total o parcial de la misma, como consecuencia de algún evento.
                 
-    h2.mb-5 Gestión de seguridad de la información
+    h2.mb-5.my-5 Gestión de seguridad de la información
 
     p.mb-5 Existen diferentes proveedores de servicios que prestan esa asistencia en la nube como: Amazon Web Services (Aws), Google Cloud Platform (GCP), Microsoft Azure, IBM Cloud, etc.
 
