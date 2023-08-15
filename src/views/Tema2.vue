@@ -254,14 +254,14 @@
               |  Si el coeficiente de correlación de Pearson está entre 0.6 y 0.8, sin incluir los extremos, se habla de correlación alta. 
             p
               span.fad ● 
-              |  Si el coeficiente de correlación de Pearson esta entre 0.4 y 0.6, sin incluir los extremos, se habla de correlación moderada. 
+              |  Si el coeficiente de correlación de Pearson está entre 0.4 y 0.6, sin incluir los extremos, se habla de correlación moderada. 
             p
               span.fad ● 
-              |  Si el coeficiente de correlación de Pearson esta entre 0.4 y 0.2, sin incluir los extremos, se habla de correlación baja.
+              |  Si el coeficiente de correlación de Pearson está entre 0.4 y 0.2, sin incluir los extremos, se habla de correlación baja.
 
             p
               span.fad ● 
-              |  Si el coeficiente de correlación de Pearson esta entre 0 y 0.2, sin incluir los extremos se habla de correlación muy baja.
+              |  Si el coeficiente de correlación de Pearson está entre 0 y 0.2, sin incluir los extremos se habla de correlación muy baja.
 
             
 
