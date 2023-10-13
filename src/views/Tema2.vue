@@ -59,9 +59,7 @@
         
           .col-md-6
             figure
-              .titulo-sexto.color-acento-contenido
-                p.mb-0 
-                  p <b> Figura 29. </b> <i>Valores únicos de las columnas</i>
+
               img(src='@/assets/curso/temas/T2/img-3.png', alt='Texto que describa la imagen')
 
         .row.justify-content-around.align-items-center
@@ -74,9 +72,7 @@
         
           .col-md-6
             figure
-              .titulo-sexto.color-acento-contenido
-                p.mb-0 
-                  p <b> Figura 29. </b> <i>Valores únicos de las columnas</i>
+
               img(src='@/assets/curso/temas/T2/img-3.png', alt='Texto que describa la imagen')
 
         .row.justify-content-around.align-items-center
@@ -85,9 +81,7 @@
         
           .col-md-6
             figure
-              .titulo-sexto.color-acento-contenido
-                p.mb-0 
-                  p <b> Figura 29. </b> <i>Valores únicos de las columnas</i>
+
               img(src='@/assets/curso/temas/T2/img-3.png', alt='Texto que describa la imagen')
               
     
@@ -187,8 +181,7 @@
                 :style="{'background-image': `url(${require('@/assets/curso/temas/T2/img-11.png')})`}"
               )
               .bloque-texto-g__texto.p-4
-                p.mb-3 Con la librería seaborn de Python, con el alias o abreviación sns, se puede hacer análisis bivariado, es decir, de 2 variables, con la finalidad de observar la relación entre las dos o el comportamiento de una variable en relación con la otra. Teniendo como referencia los incidentes ocurridos en Medellín, se puede analizar, por ejemplo, la clase de incidente, en comparación con el año, y relacionarlo con el número de días.
-                p Se debe observar cómo los datos están distribuidos, si tienen forma de distribución normal o <i>Campana de Gauss</i>.        
+                p.mb-3 Con la librería seaborn de Python, con el alias o abreviación sns, se puede hacer análisis bivariado, es decir, de 2 variables, con la finalidad de observar la relación entre las dos o el comportamiento de una variable en relación con la otra. Teniendo como referencia los incidentes ocurridos en Medellín, se puede analizar, por ejemplo, la clase de incidente, en comparación con el año, y relacionarlo con el número de días.  Se debe observar cómo los datos están distribuidos, si tienen forma de distribución normal o <i>Campana de Gauss</i>.        
 
 
 
@@ -308,7 +301,12 @@
                 <br>
                 p.mb-3 La ecuación se puede escribir de la forma:
                 <br>
-                p.mb-0 Y= a+b<span class="exponentes">1</span>* X<span class="exponentes">1</span> + b<span class="exponentes">2</span> * X<span class="exponentes">2</span> + b<span class="exponentes">3</span> * X<span class="exponentes">3</span> + b<span class="exponentes">4</span> * X<span class="exponentes">4</span> +...+ b<span class="exponentes">n</span> * X<span class="exponentes">n</span>
+                p.mb-5 Y= a+b<span class="exponentes">1</span>* X<span class="exponentes">1</span> + b<span class="exponentes">2</span> * X<span class="exponentes">2</span> + b<span class="exponentes">3</span> * X<span class="exponentes">3</span> + b<span class="exponentes">4</span> * X<span class="exponentes">4</span> +...+ b<span class="exponentes">n</span> * X<span class="exponentes">n</span>
+                <br><br>
+                p.mt-5 Para reforzar los conceptos sobre regresiones, se sugiere consultar el libro Estadística descriptiva regresión y probabilidades con aplicaciones, el cual se encuentra en el material complementario. 
+                a(:href="('https://login.bdigital.sena.edu.co/login?qurl=https://www.ebooks7-24.com%2f%3fil%3d15156%26pg%3d202')" target="_blank")
+                  p.link Enlace del material
+                
 
 
 

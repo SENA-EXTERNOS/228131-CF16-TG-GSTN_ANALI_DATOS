@@ -21,7 +21,7 @@
             p.mb-5 Consiste en tomar los datos en algunos de los formatos, por lo general CSV, separados por coma (,) o punto y coma (;) o cualquier otro símbolo de separación; también los datos podrían estar en formato de libro de excel .xlsx.
 
             p.mb-5 Se utiliza Python para la lectura de los datos, pasarlos a <i>data frame</i> y convertirlos a un formato tipo tabla, con filas y columnas.
-            p.mb-5 Se trabaja con información real, datos de incidentes viales obtenidos de la página de datos abiertos de la Alcaldía de Medellín (Alcaldía de Medellín, 2022).
+            p.mb-5 Se trabaja con información real, datos de incidentes viales obtenidos de la página de datos abiertos de la Alcaldía de Medellín (2022).
         
           .col-md-3
             figure
@@ -209,7 +209,7 @@
     
     .row.justify-content-around.align-items-center.mb-5
       .col-md-8
-        p.mb-4 A continuación, se explica un ejemplo paso a paso en la herramienta Power BI. Se trabajará con los datos de incidentes viales tomados de la página de datos abiertos de la Alcaldía de Medellín (Alcaldía de Medellín (2022).
+        p.mb-4 A continuación, se explica un ejemplo paso a paso en la herramienta Power BI. Se trabajará con los datos de incidentes viales tomados de la página de datos abiertos de la Alcaldía de Medellín (2022).
 
         p.mb-5 Power BI permite obtener datos de diferentes fuentes de datos, analizarlos y presentar un análisis de estos a través de informes. A continuación, se explica secuencialmente su funcionamiento mediante ejemplos.
       .col-md-4.mb-4.mb-md-0
