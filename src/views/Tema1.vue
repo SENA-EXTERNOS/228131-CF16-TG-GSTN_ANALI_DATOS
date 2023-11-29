@@ -220,167 +220,167 @@
     .tarjeta.color-pasos.p-4.mb-5
       PasosB.color-acento-botones
 
-        .row.justify-content-around.align-items-center(titulo="")
-          .col-md-6.mb-4.mb-md-0
+        .row.justify-content-around.align-items-start(titulo="")
+          .col-lg-4.mb-4.mb-md-0
             p En Power BI en el menú de inicio dar clic en el botón obtener datos, luego conjunto de datos de Power BI, después elige texto o CSV.
         
-          .col-md-6
+          .col-md-8
             figure
-              img(src='@/assets/curso/temas/T1/img-16.png', alt='Texto que describa la imagen')
+              img(src='@/assets/curso/temas/T1/1.png', alt='Texto que describa la imagen')
 
-        .row.justify-content-around.align-items-center(titulo="")
-          .col-md-6.mb-4.mb-md-0
+        .row.justify-content-around.align-items-start(titulo="")
+          .col-lg-4.mb-4.mb-md-0
             p Se pueden transformar los tipos de datos por columna, convertir a texto, a número, fecha, etc.
         
-          .col-md-6
+          .col-md-8
             figure
-              img(src='@/assets/curso/temas/T1/img-17.png', alt='Texto que describa la imagen')
+              img(src='@/assets/curso/temas/T1/2.png', alt='Texto que describa la imagen')
 
-        .row.justify-content-around.align-items-center(titulo="")
-          .col-md-6.mb-4.mb-md-0
+        .row.justify-content-around.align-items-start(titulo="")
+          .col-lg-4.mb-4.mb-md-0
             p Las columnas latitud y longitud que están en formato texto o <i>string</i> se pueden cambiar a número.
         
-          .col-md-6
+          .col-md-8
             figure
-              img(src='@/assets/curso/temas/T1/img-18.png', alt='Texto que describa la imagen')
+              img(src='@/assets/curso/temas/T1/3.png', alt='Texto que describa la imagen')
 
-        .row.justify-content-around.align-items-center(titulo="")
-          .col-md-6.mb-4.mb-md-0
+        .row.justify-content-around.align-items-start(titulo="")
+          .col-lg-4.mb-4.mb-md-0
             p Muestra las columnas latitud y longitud en formato texto o <i>string</i>, se pueden cambiar a número donde está el símbolo número decimal.
         
-          .col-md-6
+          .col-md-8
             figure
-              img(src='@/assets/curso/temas/T1/img-19.png', alt='Texto que describa la imagen')
+              img(src='@/assets/curso/temas/T1/4.png', alt='Texto que describa la imagen')
 
-        .row.justify-content-around.align-items-center(titulo="")
-          .col-md-6.mb-4.mb-md-0
+        .row.justify-content-around.align-items-start(titulo="")
+          .col-lg-4.mb-4.mb-md-0
             p Muestra Las columnas latitud y longitud cambiadas a formato número.
         
-          .col-md-6
+          .col-md-8
             figure
-              img(src='@/assets/curso/temas/T1/img-20.png', alt='Texto que describa la imagen')
+              img(src='@/assets/curso/temas/T1/5.png', alt='Texto que describa la imagen')
 
-        .row.justify-content-around.align-items-center(titulo="")
-          .col-md-6.mb-4.mb-md-0
+        .row.justify-content-around.align-items-start(titulo="")
+          .col-lg-4.mb-4.mb-md-0
             p Los errores en las columnas se pueden eliminar dando clic derecho en “Quitar errores”.
         
-          .col-md-6
+          .col-md-8
             figure
-              img(src='@/assets/curso/temas/T1/img-21.png', alt='Texto que describa la imagen')
+              img(src='@/assets/curso/temas/T1/6.png', alt='Texto que describa la imagen')
 
-        .row.justify-content-around.align-items-center(titulo="")
-          .col-md-6.mb-4.mb-md-0
+        .row.justify-content-around.align-items-start(titulo="")
+          .col-lg-4.mb-4.mb-md-0
             p Se puede observar la columna latitud sin errores.
         
-          .col-md-6
+          .col-md-8
             figure
-              img(src='@/assets/curso/temas/T1/img-22.png', alt='Texto que describa la imagen')
+              img(src='@/assets/curso/temas/T1/7.png', alt='Texto que describa la imagen')
 
-        .row.justify-content-around.align-items-center(titulo="")
-          .col-md-6.mb-4.mb-md-0
+        .row.justify-content-around.align-items-start(titulo="")
+          .col-lg-4.mb-4.mb-md-0
             p Se pueden reemplazar valores en una columna.
         
-          .col-md-6
+          .col-md-8
             figure
-              img(src='@/assets/curso/temas/T1/img-23.png', alt='Texto que describa la imagen')
+              img(src='@/assets/curso/temas/T1/8.png', alt='Texto que describa la imagen')
 
-        .row.justify-content-around.align-items-center(titulo="")
-          .col-md-6.mb-4.mb-md-0
+        .row.justify-content-around.align-items-start(titulo="")
+          .col-lg-4.mb-4.mb-md-0
             p Las columnas se pueden filtrar de forma ascendente, descendente, por valores, etc.
         
-          .col-md-6
+          .col-md-8
             figure
-              img(src='@/assets/curso/temas/T1/img-24.png', alt='Texto que describa la imagen')
+              img(src='@/assets/curso/temas/T1/9.png', alt='Texto que describa la imagen')
 
-        .row.justify-content-around.align-items-center(titulo="")
-          .col-md-6.mb-4.mb-md-0
+        .row.justify-content-around.align-items-start(titulo="")
+          .col-lg-4.mb-4.mb-md-0
             p En Power BI se puede observar el modelo.
         
-          .col-md-6
+          .col-md-8
             figure
-              img(src='@/assets/curso/temas/T1/img-25.png', alt='Texto que describa la imagen')
+              img(src='@/assets/curso/temas/T1/10.png', alt='Texto que describa la imagen')
 
-        .row.justify-content-around.align-items-center(titulo="")
-          .col-md-6.mb-4.mb-md-0
+        .row.justify-content-around.align-items-start(titulo="")
+          .col-lg-4.mb-4.mb-md-0
             p En Power BI se pueden crear un <i>dashboard</i> o tablero de mando luego de hacer la limpieza de los datos que consiste en borrar los datos duplicados, los valores nan, los valores nulos, el tipo de variable correcto para cada columna, etc.
         
-          .col-md-6
+          .col-md-8
             figure
-              img(src='@/assets/curso/temas/T1/img-26.png', alt='Texto que describa la imagen')
+              img(src='@/assets/curso/temas/T1/11.png', alt='Texto que describa la imagen')
 
-        .row.justify-content-around.align-items-center(titulo="")
-          .col-md-6.mb-4.mb-md-0
+        .row.justify-content-around.align-items-start(titulo="")
+          .col-lg-4.mb-4.mb-md-0
             p En la configuración interna del computador se puede cambiar a región español (Latinoamérica) para que Power BI reconozca el decimal como un punto y la coma para separación de mil.
         
-          .col-md-6
+          .col-md-8
             figure
-              img(src='@/assets/curso/temas/T1/img-27.png', alt='Texto que describa la imagen')
+              img(src='@/assets/curso/temas/T1/12.png', alt='Texto que describa la imagen')
 
-        .row.justify-content-around.align-items-center(titulo="")
-          .col-md-6.mb-4.mb-md-0
+        .row.justify-content-around.align-items-start(titulo="")
+          .col-lg-4.mb-4.mb-md-0
             p Muestra la siguiente pestaña para cambiar a región español (Latinoamérica).
         
-          .col-md-6
+          .col-md-8
             figure
-              img(src='@/assets/curso/temas/T1/img-28.png', alt='Texto que describa la imagen')
+              img(src='@/assets/curso/temas/T1/13.png', alt='Texto que describa la imagen')
 
 
-        .row.justify-content-around.align-items-center(titulo="")
-          .col-md-6.mb-4.mb-md-0
+        .row.justify-content-around.align-items-start(titulo="")
+          .col-lg-4.mb-4.mb-md-0
             p Muestra la última pestaña para cambiar a región español (Latinoamérica)
         
-          .col-md-3
+          .col-md-8
             figure
-              img(src='@/assets/curso/temas/T1/img-29.png', alt='Texto que describa la imagen')
+              img(src='@/assets/curso/temas/T1/14.png', alt='Texto que describa la imagen')
 
-        .row.justify-content-around.align-items-center(titulo="")
-          .col-md-6.mb-4.mb-md-0
+        .row.justify-content-around.align-items-start(titulo="")
+          .col-lg-4.mb-4.mb-md-0
             p Si el mapa está deshabilitado debe ir a archivo-> opciones y configuración-> opciones ->global ->seguridad, por último, marcar uso de elementos visuales de mapa y mapa coroplético.
         
-          .col-md-6
+          .col-md-8
             figure
-              img(src='@/assets/curso/temas/T1/img-30.png', alt='Texto que describa la imagen')
+              img(src='@/assets/curso/temas/T1/15.png', alt='Texto que describa la imagen')
 
-        .row.justify-content-around.align-items-center(titulo="")
-          .col-md-6.mb-4.mb-md-0
+        .row.justify-content-around.align-items-start(titulo="")
+          .col-lg-4.mb-4.mb-md-0
             p Muestra cómo habilitar el mapa.
         
-          .col-md-6
+          .col-md-8
             figure
-              img(src='@/assets/curso/temas/T1/img-31.png', alt='Texto que describa la imagen')
+              img(src='@/assets/curso/temas/T1/16.png', alt='Texto que describa la imagen')
 
-        .row.justify-content-around.align-items-center(titulo="")
-          .col-md-6.mb-4.mb-md-0
+        .row.justify-content-around.align-items-start(titulo="")
+          .col-lg-4.mb-4.mb-md-0
             p Para el <i>dashboard</i> se escoge de la visualización la figura tabla y, luego, las columnas, en este caso año, mes, día, clase_incidente, barrio, comuna, grupo_edad, condición.
         
-          .col-md-6
+          .col-md-8
             figure
-              img(src='@/assets/curso/temas/T1/img-32.png', alt='Texto que describa la imagen')
+              img(src='@/assets/curso/temas/T1/17.png', alt='Texto que describa la imagen')
 
-        .row.justify-content-around.align-items-center(titulo="")
-          .col-md-6.mb-4.mb-md-0
+        .row.justify-content-around.align-items-start(titulo="")
+          .col-lg-4.mb-4.mb-md-0
             p En el <i>dashboard</i> se escoge el gráfico de anillos donde está el recuento por comuna referente a la clase de incidente (choque, otro, atropello, caída del ocupante, volcamiento).
         
-          .col-md-6
+          .col-md-8
             figure
-              img(src='@/assets/curso/temas/T1/img-33.png', alt='Texto que describa la imagen')
+              img(src='@/assets/curso/temas/T1/18.png', alt='Texto que describa la imagen')
 
-        .row.justify-content-around.align-items-center(titulo="")
-          .col-md-6.mb-4.mb-md-0
+        .row.justify-content-around.align-items-start(titulo="")
+          .col-lg-4.mb-4.mb-md-0
             p Filtrado por las columnas, en este caso: año, mes, día, clase_ incidente, barrio, comuna, grupo_ edad, condición.
         
-          .col-md-6
+          .col-md-8
             figure
-              img(src='@/assets/curso/temas/T1/img-34.png', alt='Texto que describa la imagen')
+              img(src='@/assets/curso/temas/T1/19.png', alt='Texto que describa la imagen')
 
 
-        .row.justify-content-around.align-items-center(titulo="")
-          .col-md-6.mb-4.mb-md-0
+        .row.justify-content-around.align-items-start(titulo="")
+          .col-lg-4.mb-4.mb-md-0
             p En el <i>dashboard</i> final se muestran dos tarjetas donde está la hora del incidente y la condición.
         
-          .col-md-6
+          .col-md-8
             figure
-              img(src='@/assets/curso/temas/T1/img-35.png', alt='Texto que describa la imagen')
+              img(src='@/assets/curso/temas/T1/20.png', alt='Texto que describa la imagen')
 
     .row.justify-content-around.align-items-center.mb-5
       .col-md-2.mb-4.mb-md-0
@@ -391,67 +391,64 @@
         
     .tarjeta.tarjeta-slyder.p-4.mb-5
       SlyderA(tipo="b")
-        .row.justify-content-around.align-items-center
-          .col-md-6.mb-4.mb-md-0
+        .row.justify-content-around
+          .col-lg-4.mb-4.mb-md-0
             h4.mb-3 Tableau Public
             p Es otra herramienta para la visualización y el análisis de datos. Al conectar, se escoge el tipo de fuente de los datos, en este caso: archivo de texto.
         
-          .col-md-6
+          .col-md-8
             figure
-              img(src='@/assets/curso/temas/T1/img-37.png', alt='Texto que describa la imagen')
+              img(src='@/assets/curso/temas/T1/21.png', alt='Texto que describa la imagen')
 
-        .row.justify-content-around.align-items-center
-          .col-md-6.mb-4.mb-md-0
+        .row.justify-content-around
+          .col-lg-4.mb-4.mb-md-0
             p En el archivo de texto se seleccionan los datos de incidentes de tránsito en Medellín.
         
-          .col-md-6
+          .col-md-8
             figure
-              img(src='@/assets/curso/temas/T1/img-38.png', alt='Texto que describa la imagen')
+              img(src='@/assets/curso/temas/T1/22.png', alt='Texto que describa la imagen')
 
 
-        .row.justify-content-around.align-items-center
-          .col-md-6.mb-4.mb-md-0
+        .row.justify-content-around
+          .col-lg-4.mb-4.mb-md-0
             p Se puede observar una vista previa de los datos en Tableau.
         
-          .col-md-6
+          .col-md-8
             figure
-              img(src='@/assets/curso/temas/T1/img-39.png', alt='Texto que describa la imagen')
+              img(src='@/assets/curso/temas/T1/23.png', alt='Texto que describa la imagen')
 
-        .row.justify-content-around.align-items-center
-          .col-md-6.mb-4.mb-md-0
+        .row.justify-content-around
+          .col-lg-4.mb-4.mb-md-0
             p Al hacer clic en la hoja 1, en esa región se pueden hacer las diferentes visualizaciones o gráficos.
         
-          .col-md-6
+          .col-md-8
             figure
-              img(src='@/assets/curso/temas/T1/img-40.png', alt='Texto que describa la imagen')
+              img(src='@/assets/curso/temas/T1/24.png', alt='Texto que describa la imagen')
 
-        .row.justify-content-around.align-items-center
-          .col-md-6.mb-4.mb-md-0
+        .row.justify-content-around
+          .col-lg-4.mb-4.mb-md-0
             p.mb-3 En las columnas, se encuentran escritos diferentes símbolos. ABC significa que la columna es de tipo texto o <i>string</i>, símbolo de calendario referente a una fecha, símbolo de numeral referente a un valor numérico.
             p.mb-5 Para latitud y longitud, se cambia de número a función geográfica latitud y longitud, función geográfica longitud. Queda con un símbolo de globo terráqueo o mundo.
         
-          .col-md-6
+          .col-md-8
             figure
-              img(src='@/assets/curso/temas/T1/img-41.png', alt='Texto que describa la imagen')
+              img(src='@/assets/curso/temas/T1/25.png', alt='Texto que describa la imagen')
 
-        .row.justify-content-around.align-items-center
-          .col-md-6.mb-4.mb-md-0
+        .row.justify-content-around
+          .col-lg-4.mb-4.mb-md-0
             p Ahora, hacer clic en actualizar, para ver los datos en las diferentes columnas.
         
-          .col-md-6
+          .col-md-8
             figure
-              .titulo-sexto.color-acento-contenido
-                p.mb-0 
-                  p <i>Datos de las columnas</i>
-              img(src='@/assets/curso/temas/T1/img-42.png', alt='Texto que describa la imagen')
+              img(src='@/assets/curso/temas/T1/26.png', alt='Texto que describa la imagen')
 
-        .row.justify-content-around.align-items-center
-          .col-md-6.mb-4.mb-md-0
+        .row.justify-content-around
+          .col-lg-4.mb-4.mb-md-0
             p En la columna se arrastra la variable año, en la fila se arrastra la variable grupo_edad y en texto se arrastra la variable edad, quedando etiquetada por edad.
         
-          .col-md-6
+          .col-md-8
             figure
-              img(src='@/assets/curso/temas/T1/img-43.png', alt='Texto que describa la imagen')
+              img(src='@/assets/curso/temas/T1/27.png', alt='Texto que describa la imagen')
 
     h2.mb-5 Criterios de respaldo y recuperación de información
 
